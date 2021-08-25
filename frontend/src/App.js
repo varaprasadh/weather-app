@@ -11,6 +11,10 @@ function ForecastCard({forecast }){
        <div className="temp-header">Temperature</div>
        <div className="flex-container">
          <div className="inner-flex section-temperature">
+           <div className="inner-flex-item">Min</div>
+           <div className="inner-flex-item">Max</div>
+         </div>
+         <div className="inner-flex section-temperature">
            <div className="inner-flex-item">{forecast.temp_min}</div>
            <div className="inner-flex-item">{forecast.temp_max}</div>
          </div>
@@ -23,10 +27,10 @@ function ForecastCard({forecast }){
            <div className="inner-flex-item">{forecast.humidity}</div>
          </div>
        </div>
-  
      </div>
    )
 }
+
 
 
 
